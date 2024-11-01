@@ -1,0 +1,31 @@
+.main {
+  padding: 10%;
+  background-color: #c3caea;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.logoImg {
+  height: 70px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.container {
+  padding: 10%;
+  min-height: 200px;
+  background-color: #5763a5;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.formContainer {
+  background-color: #454f84;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
