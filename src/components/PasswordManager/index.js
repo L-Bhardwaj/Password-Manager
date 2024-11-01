@@ -57,12 +57,13 @@ class PasswordManager extends Component {
           className="logoImg"
           alt="app logo"
         />
-        <div className="Container">
+
+        <div className="container">
           <div className="formContainer">
             <form onSubmit={this.addDetail}>
               <h1>Add New Password</h1>
-              <div>
-                <label htmlFor="website">
+              <div className="labelContainer">
+                <label htmlFor="website" className="label">
                   <img
                     src="https://assets.ccbp.in/frontend/react-js/password-manager-website-img.png"
                     className="icon"
@@ -79,8 +80,8 @@ class PasswordManager extends Component {
                   className="input"
                 />
               </div>
-              <div>
-                <label htmlFor="userName">
+              <div className="labelContainer">
+                <label htmlFor="userName" className="label">
                   <img
                     src="https://assets.ccbp.in/frontend/react-js/password-manager-username-img.png "
                     className="icon"
@@ -97,8 +98,8 @@ class PasswordManager extends Component {
                   className="input"
                 />
               </div>
-              <div>
-                <label htmlFor="password">
+              <div className="labelContainer">
+                <label htmlFor="password" className="label">
                   <img
                     src="https://assets.ccbp.in/frontend/react-js/password-manager-password-img.png "
                     className="icon"
@@ -122,6 +123,7 @@ class PasswordManager extends Component {
               </div>
             </form>
           </div>
+
           <div>
             <img
               src="https://assets.ccbp.in/frontend/react-js/password-manager-lg-img.png"
@@ -131,20 +133,20 @@ class PasswordManager extends Component {
           </div>
         </div>
 
-        <div>
-          <div>
-            <div>
+        <div className="container1">
+          <div className="passwordsHeadings">
+            <div className="passHead">
               <h1>Your Passwords</h1>
-              <p>{passwordList.length}</p>
+              <p className="count">{passwordList.length}</p>
             </div>
 
-            <div>
+            <div className="searchContainer">
               <img
                 src="https://assets.ccbp.in/frontend/react-js/password-manager-search-img.png"
                 className="searchImg"
                 alt="search"
               />
-              <input type="search" className="SearchInput" />
+              <input type="search" className="searchInput" />
             </div>
           </div>
           <hr />
@@ -159,7 +161,7 @@ class PasswordManager extends Component {
           </div>
           <div>
             {passwordList.length === 0 ? (
-              <div>
+              <div className="bgContainer">
                 <img
                   src="https://assets.ccbp.in/frontend/react-js/no-passwords-img.png"
                   className="bgImg"
